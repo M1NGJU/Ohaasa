@@ -82,6 +82,28 @@ namespace Ohaasa
             string birthday = tbBirthday.Text;
             string result = GetOhaasa();
             tdResult.Text = birthday +" "+ Environment.NewLine +result;
+
+            SaveHistory($"{birthday}|{result}");
+        }
+
+        private void SaveHistory(string history)
+        {
+            try
+            {
+                string filename = "history.csv";
+                File.AppendAllText(filename, history + Environment.NewLine);
+            }
+            catch (UnauthorizedAccessException ex)
+            {
+                MessageBox.Show($"권한이 없어요. \n{ex.Message}", "알 수 없는 오류!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"알 수 없는 오류가 발생했어요. \n{ex.Message}", "알 수 없는 오류!",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
         }
     }
 }
