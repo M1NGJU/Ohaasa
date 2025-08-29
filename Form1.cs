@@ -105,5 +105,11 @@ namespace Ohaasa
             }
 
         }
+
+        internal void LoadHistory(string history)
+        {
+            string birthday = history.Split('|')[0];
+            tbBirthday.Text = birthday;
+        }
     }
 }
