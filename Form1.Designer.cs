@@ -33,7 +33,9 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnShowResult = new System.Windows.Forms.Button();
             this.tbBirthday = new System.Windows.Forms.DateTimePicker();
+            this.tdResult = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -50,6 +52,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.tdResult);
             this.groupBox2.Location = new System.Drawing.Point(319, 40);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(435, 377);
@@ -82,6 +85,14 @@
             this.tbBirthday.Size = new System.Drawing.Size(200, 21);
             this.tbBirthday.TabIndex = 3;
             // 
+            // tdResult
+            // 
+            this.tdResult.Location = new System.Drawing.Point(20, 30);
+            this.tdResult.Multiline = true;
+            this.tdResult.Name = "tdResult";
+            this.tdResult.Size = new System.Drawing.Size(391, 322);
+            this.tdResult.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
@@ -93,6 +104,8 @@
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -104,6 +117,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnShowResult;
         private System.Windows.Forms.DateTimePicker tbBirthday;
+        private System.Windows.Forms.TextBox tdResult;
     }
 }
 
