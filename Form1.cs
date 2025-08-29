@@ -76,5 +76,12 @@ namespace Ohaasa
             Form form = new FormAbout();
             form.ShowDialog();
         }
+
+        private void btnShowResult_Click(object sender, EventArgs e)
+        {
+            string birthday = tbBirthday.Text;
+            string result = GetOhaasa();
+            tdResult.Text = birthday +" "+ Environment.NewLine +result;
+        }
     }
 }

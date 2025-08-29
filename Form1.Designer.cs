@@ -84,6 +84,7 @@
             this.btnShowResult.TabIndex = 2;
             this.btnShowResult.Text = "결과 보기";
             this.btnShowResult.UseVisualStyleBackColor = true;
+            this.btnShowResult.Click += new System.EventHandler(this.btnShowResult_Click);
             // 
             // tbBirthday
             // 
