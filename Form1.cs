@@ -19,7 +19,8 @@ namespace Ohaasa
 
         private void 내역불러오기ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            FormHistory form = new FormHistory();
+            form.Show();
         }
 
         private void 끝내기ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -29,7 +30,8 @@ namespace Ohaasa
 
         private void 오하아사정보ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form form = new FormAbout();
+            form.ShowDialog(); 
         }
     }
 }
